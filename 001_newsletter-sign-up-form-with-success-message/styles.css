@@ -1,0 +1,238 @@
+@font-face {
+    font-family: "Roboto Regular";
+    src: url("./assets/fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Bold";
+    src: url("./assets/fonts/Roboto-Bold.ttf");
+}
+
+:root {
+
+    --color-primary-tomato: hsl(4, 100%, 67%);
+    --color-neutral-dark-slate-grey: hsl(234, 29%, 20%);
+    --color-neutral-charcoal-grey: hsl(235, 18%, 26%);
+    --color-neutral-grey: hsl(231, 7%, 60%);
+    --color-neutral-white: hsl(0, 0%, 100%);
+
+    --font-body: "Roboto Regular";
+    --font-body-bold: "Roboto Bold";
+    
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font-body);
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-neutral-dark-slate-grey);
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: var(--color-neutral-white);
+    height: 500px;
+    width: 700px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+main > section {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40px 0px 20px;
+    justify-content: center;
+    gap: 20px;
+}
+
+main > section > h1 {
+    font-family: var(--font-body-bold);
+    color: var(--color-neutral-dark-slate-grey);
+    font-size: 2.5rem;
+    margin-block: 0px;
+    margin-top: 30px;
+}
+
+main > section > p {
+    margin-block: 0px;
+    margin-top: -5px;
+    font-size: 14px;
+}
+
+.copy-section {
+    display: grid;
+    row-gap: 8px;;
+    grid-template-columns: 1fr 8fr;
+    font-size: 14px;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.form-section section span {
+    margin-bottom: 8px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.form-section section span:nth-child(2) {
+    justify-self: right;
+    color: var(--color-primary-tomato);
+    visibility: hidden;
+}
+
+.form-section input {
+    height: 45px;
+    text-indent: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--color-neutral-grey);
+}
+
+.form-section input:focus {
+    outline: none;
+}
+
+.form-section input:hover {
+    cursor: pointer;
+}
+
+.form-section button {
+    margin-top: 20px;
+    height: 45px;
+    background-color: var(--color-neutral-dark-slate-grey);
+    border: none;
+    color: var(--color-neutral-white);
+    border-radius: 10px;
+}
+
+.form-section button:hover {
+    background-color: var(--color-primary-tomato);
+    cursor: pointer;
+}
+
+
+main > img {
+    height: 100%;
+}
+
+main > .image-desktop {
+    display: block;
+}
+
+main > .image-mobile {
+    display: none;
+}
+
+.success-modal {
+    visibility: hidden;
+    position: absolute;
+    background-color: var(--color-neutral-white);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    padding: 45px;
+    width: 340px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.success-modal img {
+    width: 45px;
+    margin-bottom: 20px;
+}
+
+.success-modal h1 {
+    font-family: var(--font-body-bold);
+    font-size: 2.5rem;
+    color: var(--color-neutral-dark-slate-grey);
+    margin-block: 0px;
+    line-height: 40px;
+}
+
+.success-modal p {
+    margin-block: 0px;
+    font-size: 0.8rem;
+    line-height: 20px;
+    color: var(--color-neutral-dark-slate-grey);
+}
+
+.success-modal button {
+    margin-top: 20px;
+
+    height: 45px;
+    background-color: var(--color-neutral-dark-slate-grey);
+    border: none;
+    color: var(--color-neutral-white);
+    border-radius: 10px;
+}
+
+.success-modal button:hover {
+    background-color: var(--color-primary-tomato);
+    cursor: pointer;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 375px) {
+
+    body {
+        width: 375px;
+    }
+
+    main {
+        flex-direction: column-reverse;
+        width: 100%;
+        border-radius: 0px;
+        height: fit-content;
+    }
+
+    main > section {
+        height: 60%;
+    }
+
+    main > .image-desktop {
+       display: none;
+    }
+
+    main > .image-mobile {
+        display: block;
+    }
+
+    main > section > h1 {
+        font-size: 2.3rem;
+    }
+
+    .success-modal {
+        height: 100vh;
+    }
+
+    .success-modal img {
+        margin-top: auto;
+    }
+
+    .success-modal button {
+        margin-top: auto;
+    }
+
+}
