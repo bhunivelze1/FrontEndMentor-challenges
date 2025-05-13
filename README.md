@@ -7,3 +7,7 @@ This repository store all the solutions of the [FrontEndMentor](https://www.fron
 Date: ?? <br>
 Tech Stack: HTML, CSS. JavaScript <br><br>
 ![image](https://github.com/user-attachments/assets/3088c1bc-3de9-4492-8808-dfac94ca9579)
+
+### 002 - Browser extension manager UI (IN PROGRESS)
+Date: ?? <br>
+Tech Stack: HTML, CSS. JavaScript <br><br>
