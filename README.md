@@ -10,4 +10,4 @@ Tech Stack: HTML, CSS, JavaScript <br><br>
 
 ### 002 - Browser extension manager UI (IN PROGRESS)
 Date: ?? <br>
-Tech Stack: HTML, CSS, JavaScript <br><br>
+Tech Stack: Pug, SASS, JavaScript, Fastify <br><br>
